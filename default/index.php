@@ -59,22 +59,6 @@ if ($result->num_rows >= 1) {
                 <form method="post" action="connect.php">
                     <div class="field">
                         <div class="control has-icons-left">
-                            <input class="input" type="text" id="form_font" name="fname" placeholder="First Name" required>
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-user"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="control has-icons-left">
-                            <input class="input" type="text" id="form_font" name="lname" placeholder="Last Name" required>
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-user"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="control has-icons-left">
                             <input class="input" type="email" id="form_font" name="email" placeholder="Email" required>
                             <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
@@ -82,15 +66,15 @@ if ($result->num_rows >= 1) {
                         </div>
                     </div>
                     <br>
-                    <div class="columns is-centered is-mobile">
-                        <div class="control">
-                            <label class="checkbox">
-                                <input type="checkbox" required>
-                                I agree to the <a href="policy.php">Terms of Use</a>
-                            </label>
-                        </div>
-                    </div>
-                    <br>
+<!--                    <div class="columns is-centered is-mobile">-->
+<!--                        <div class="control">-->
+<!--                            <label class="checkbox">-->
+<!--                                <input type="checkbox" required>-->
+<!--                                I agree to the <a href="policy.php">Terms of Use</a>-->
+<!--                            </label>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <br>-->
                     <div class="buttons is-centered">
                         <button class="button is-link">Connect</button>
                     </div>

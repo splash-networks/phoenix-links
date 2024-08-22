@@ -23,15 +23,11 @@ $auth_result = $unifi_connection->authorize_guest($mac, $duration, null, null, n
 
 if ($_SESSION["user_type"] == "new") {
 
-  $fname = $_POST['fname'];
-  $lname = $_POST['lname'];
   $email = $_POST['email'];
 
   mysqli_query($con, "
     CREATE TABLE IF NOT EXISTS `$table_name` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
-    `firstname` varchar(45) NOT NULL,
-    `lastname` varchar(45) NOT NULL,
     `email` varchar(45) NOT NULL,
     `mac` varchar(45) NOT NULL,
     `last_updated` varchar(45) NOT NULL,
@@ -39,7 +35,7 @@ if ($_SESSION["user_type"] == "new") {
     UNIQUE KEY (mac)
     )");
 
-  mysqli_query($con, "INSERT INTO `$table_name` (firstname, lastname, email, mac, last_updated) VALUES ('$fname', '$lname', '$email','$mac', NOW())");
+  mysqli_query($con, "INSERT INTO `$table_name` (email, mac, last_updated) VALUES ('$email','$mac', NOW())");
 }
 
 mysqli_close($con);
