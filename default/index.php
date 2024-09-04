@@ -54,7 +54,11 @@ if ($result->num_rows >= 1) {
     <div class="main">
         <section class="section">
             <div class="container">
-                <div id="contact_form" class="content is-size-5 has-text-centered has-text-weight-bold">Enter your details
+                <div class="content is-size-5 has-text-centered has-text-weight-bold">
+                    Welcome to Wee Shop
+                </div>
+                <div class="content is-size-6 has-text-centered">
+                    Please enter your email below:
                 </div>
                 <form method="post" action="connect.php">
                     <div class="field">
@@ -66,15 +70,6 @@ if ($result->num_rows >= 1) {
                         </div>
                     </div>
                     <br>
-<!--                    <div class="columns is-centered is-mobile">-->
-<!--                        <div class="control">-->
-<!--                            <label class="checkbox">-->
-<!--                                <input type="checkbox" required>-->
-<!--                                I agree to the <a href="policy.php">Terms of Use</a>-->
-<!--                            </label>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <br>-->
                     <div class="buttons is-centered">
                         <button class="button is-link">Connect</button>
                     </div>
